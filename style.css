@@ -198,7 +198,7 @@ text-align:left;
 width:90%;
 height:60%;
 margin:0 1.5pc 0 1.5pc;
-overflow-y:scroll;
+overflow-y:visible;
 }
 
 .progressBar {
@@ -237,7 +237,7 @@ z-index:4;
 position:absolute;
 border-top:2px solid #ff0000;
 position:absolute;
-bottom:-5%;
+bottom:0%;
 }
 
 .footer>h1 {
