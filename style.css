@@ -129,7 +129,7 @@ text-align:center;
 
 .handles{
 width:90%;
-height:15%;
+height:12%;
 margin:1.5pc;
 }
 
@@ -196,8 +196,8 @@ text-align:left;
 
 .content3{
 width:90%;
-height:80%;
-margin:2pc;
+height:70%;
+margin:1.5pc;
 overflow-y:scroll;
 }
 
