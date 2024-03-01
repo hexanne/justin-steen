@@ -131,7 +131,6 @@ text-align:center;
 width:90%;
 height:12%;
 margin:1.5pc;
-background:lime;
 }
 
 .handles>h1 {
@@ -200,7 +199,6 @@ width:90%;
 height:60%;
 margin:0 1.5pc 0 1.5pc;
 overflow-y:scroll;
-background:yellow;
 }
 
 .progressBar {
