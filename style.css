@@ -238,6 +238,7 @@ position:absolute;
 border-top:2px solid #ff0000;
 position:absolute;
 bottom:0%;
+display:none;
 }
 
 .footer>h1 {
