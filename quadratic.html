@@ -1,1 +1,120 @@
 /*Made by steen*/
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body {
+padding:0;
+margin:0;
+}
+
+header {
+background:#ffffff;
+position:absolute;
+width:100%;
+height:10%;
+border-bottom:1px solid #ff0000;
+}
+
+header>h1 {
+color:#ff0000;
+text-align:center;
+}
+
+#input,#output {
+width:100%;
+height:50%;
+position:absolute;
+top:15%;
+background:#f0f0f0;
+}
+
+#input {
+z-index:2;
+}
+
+.uInput,.uOutput  {
+position:sticky;
+width:80%;
+height:80%;
+background:#ffffff;
+margin:10%;
+padding:.5pc;
+}
+
+#output {
+z-index:1;
+}
+
+label {
+font-size:20px;
+color:#ff0000;
+}
+
+input {
+width:98%;
+height:2pc;
+border-radius:3px;
+outline:none;
+border:1px solid #ff0000;
+color:#ff0000;
+font-size:18px;
+}
+
+button {
+width:100%;
+height:2pc;
+font-size:20px;
+color:#ff0000;
+background:#ffffff;
+border-radius:12px;
+border:1px solid #ff0000;
+}
+
+button:active  {
+color:#ffffff;
+background:#ff0000;
+}
+</style>
+<script type="text/javascript">
+function calc(){
+var a = document.getElementById("aa").value;
+var b = document.getElementById("bb").value;
+var c = document.getElementById("cc").value;
+var x1 = (-b+(b*b-4*a*c)**0.5)/2*a
+var x2 = (-b-(b*b-4*a*c)**0.5)/2*a
+document.getElementById("answer").innerHTML ="The value of x are : <br><br>"+ x1+ "<br><br> OR <br><br>"+x2;
+document.getElementById("output").style.zIndex= "3";
+}
+function clse(){
+document.getElementById("output").style.zIndex= "1";
+}
+
+</script>
+</head>
+<body>
+<header>
+<h1>QUADRATIC EQUATIONS CALCULATOR </h1>
+</header>
+
+<div id="input" >
+<div class="uInput" >
+<label>Enter the value of a</label>
+<input type="text" id="aa" ><br><br>
+<label>Enter the value of b</label>
+<input type="text" id="bb" ><br><br>
+<label>Enter the value of c</label>
+<input type="text" id="cc" ><br><br>
+<button onclick="calc()">CALCULATE</button>
+</div>
+</div>
+
+<div id="output" >
+<div class="uOutput" >
+<p id="answer" >The answer  goes here</p>
+<button onclick="clse()">BACK</button>
+</div>
+</div>
+</body>
+</html>
